@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="activity4Suite" >
+    <test name="SuiteTests" >
+        <classes>
+            <class name="net.training_support.activity4.suiteExample.DemoOne"/>
+            <class name="net.training_support.activity4.suiteExample.DemoTwo"/>
+        </classes>
+    </test>
+</suite>

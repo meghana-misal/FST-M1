@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="activity5Suite" >
+    <test name="SuiteTests" >
+        <groups>
+            <run>
+                <include name="HeaderTests" />
+                <include name="ButtonTests" />
+                <!--<exclude name="HeaderTests" />-->
+            </run>
+        </groups>
+        <classes>
+            <class name="net.training_support.Activity5"/>
+        </classes>
+    </test>
+</suite>
