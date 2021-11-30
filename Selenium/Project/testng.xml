@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestSuite" parallel="methods">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    </listeners>
+    <test name="Tests">
+        <classes>
+            <class name="net.training_support.Activity1" />
+            <class name="net.training_support.Activity2" />
+            <class name="net.training_support.Activity3" />
+            <class name="net.training_support.Activity4" />
+            <class name="net.training_support.Activity5" />
+            <!-- NOTE: Activity  6 and 7 swapped, Reason: job needed to add first for apply -->
+            <class name="net.training_support.Activity7" />
+            <class name="net.training_support.Activity6" />
+            <class name="net.training_support.Activity8" />
+            <class name="net.training_support.Activity9" />
+        </classes>
+    </test>
+</suite>
