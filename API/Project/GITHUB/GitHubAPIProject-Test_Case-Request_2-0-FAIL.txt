@@ -1,0 +1,66 @@
+Status: FAIL
+Time Taken: 229
+Size: 153
+Timestamp: Mon Dec 06 14:52:37 IST 2021
+TestStep: Request 2
+
+----------------- Messages ------------------------------
+[Valid HTTP Status Codes] Response status code: 400 is not in acceptable list of status codes
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://api.github.com
+Method: POST
+StatusCode: 400
+URL: https://api.github.com/user/keys
+
+---------------- Request ---------------------------
+Authorization: [Bearer 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]
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/16.0.1)]
+Host: [api.github.com]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [615]
+Content-Type: [application/json]
+
+POST https://api.github.com/user/keys HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Authorization: Bearer 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
+Content-Length: 615
+Host: api.github.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/16.0.1)
+
+{
+"title": "TestKey",
+"key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDDF+lTyLF3Q/rVaPHC5Tys5KH8JjLNxmmdi8fqb8zCfLXLNzpBl1o58A1eE+dQs/9oojr8nLqvBiqMaHOu21Nbvw0mEPlgQlIjAxojgFJzDIQnWTOBqeBPxD5+/9wf8hPzoqpIxWcLk0NjBvI7vBFHYP1YzVLQN/YYsv+oAkJuRHBcMV8SUal9hQAQ1hltw6X+z4N8dVYWnaJR457nUh0FCikxLfZpG/uVftyfcl6+T5ejQxyHi71SwBRa9/k35bqLo4cdGlEJM5MX+9aQ2SUh77MFEt4ESFwACYqWfr8VtzgHjhXs4IiN5iOacFE9wHYNut/QpY4T27UdaFubRym3wDEarB9UZbrnGT5yIXNTZ0Ybqt9lwozEakLIOqrvDLTgn7oSMBTYT1tB9qiPMY4YSENtbC+E7MTjKiu8HHU/bKTnT4aSaqA5ApC9+u6jq4Au+oc/PkknFHIe4OGSXVLkMnMnsfqLeeqppN6ctAswLB+fTeeICgcgXfeNxoRepmU= gmx\002b17744@LAPTOP-I0H8HKVF"
+}
+
+---------------- Response --------------------------
+X-Accepted-OAuth-Scopes: [admin:public_key, write:public_key]
+Server: [GitHub.com]
+X-RateLimit-Resource: [core]
+X-RateLimit-Used: [26]
+Access-Control-Allow-Origin: [*]
+X-Content-Type-Options: [nosniff]
+X-RateLimit-Reset: [1638783605]
+Date: [Mon, 06 Dec 2021 09:22:37 GMT]
+X-Frame-Options: [deny]
+Referrer-Policy: [origin-when-cross-origin, strict-origin-when-cross-origin]
+Access-Control-Expose-Headers: [ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset]
+Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+X-RateLimit-Remaining: [4974]
+X-GitHub-Media-Type: [github.v3; format=json]
+Content-Security-Policy: [default-src 'none']
+Vary: [Accept-Encoding, Accept, X-Requested-With]
+X-RateLimit-Limit: [5000]
+#status#: [HTTP/1.1 400 Bad Request]
+Content-Length: [153]
+X-XSS-Protection: [0]
+X-OAuth-Scopes: [admin:public_key, user:email]
+github-authentication-token-expiration: [2022-01-05 05:51:17 UTC]
+Content-Type: [application/json; charset=utf-8]
+X-GitHub-Request-Id: [EB24:44B5:3C782D:448092:61ADD65D]
+
+{"message":"Problems parsing JSON","documentation_url":"https://docs.github.com/rest/reference/users#create-a-public-ssh-key-for-the-authenticated-user"}
